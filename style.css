@@ -1,0 +1,119 @@
+.grid{
+    background-color: rgb(58, 129, 0);
+    height:600px;
+    width:600px;
+    display:flex;
+    flex-wrap:wrap;
+    box-shadow:   5px 5px 5px rgb(53 21 6);
+    margin:20px;
+    border-radius: 15px;
+    
+
+
+}
+
+.square{
+    background-color: rgb(165, 85, 11);
+    border: solid black 1px;
+    height:198px;
+    width:198px;
+    border-radius: 50%;
+    box-shadow:inset 0 10px 0 7px rgb(53 21 6);
+    position: relative;
+    color:rgb(58, 129, 0);
+    
+    
+}
+
+.mole{
+    
+    object-fit: contain;
+    
+    background-size:198px 198px  ;
+    background-image: url(mole.png);
+    z-index: +1; 
+    
+}
+.moleSmashed{
+    
+    object-fit: cover;
+    
+    background-size:198px 198px  ;
+    background-image: url(mole-whacked.png);
+    z-index: +1; 
+    
+    
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(177, 165, 6);
+    
+
+}
+
+.scorediv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: chocolate;
+    padding: 10px;
+    padding-left: 250px;
+    padding-right: 250px;
+    border-radius: 15px;
+    color:rgb(59, 54, 3);
+    
+    box-shadow:   5px 5px 5px rgb(53 21 6);
+    margin:20px;
+    
+}
+
+.timediv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(103, 173, 37);
+    padding: 10px;
+    padding-left: 225px;
+    padding-right: 225px;
+    border-radius: 15px;
+    color:rgb(87, 65, 7);
+    box-shadow:   5px 5px 5px rgb(53 21 6);
+    margin:20px;
+    
+}
+
+#reset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#resetButton{
+    width:200px;
+    height: 50px;
+    background-color: burlywood;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font: size 20px;;
+    
+}
+
+.cursor{
+    top:0px;
+    left:0px;
+    background-image: url(hammer.png);
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    background-size: 100% 100%;
+}
+
+.cursor.active{
+    transform: translate(-20% -20%) rotate(45deg) ;
+}
+
